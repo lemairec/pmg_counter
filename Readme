@@ -1,6 +1,13 @@
 PMG counter
 
 # hardware
+#define LCD_1 23
+#define LCD_2 17
+#define LCD_3 16
+
+
+U8G2_ST7920_128X64_F_SW_SPI u8g2(U8G2_R0, LCD_1, LCD_2, LCD_3, U8X8_PIN_NONE);
+u8g2.begin(35, 33, 31 , /* menu_up_pin= */ U8X8_PIN_NONE, /* menu_down_pin= */ U8X8_PIN_NONE, /* menu_home_pin= */ U8X8_PIN_NONE);  
 
 # software
 
